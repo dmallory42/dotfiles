@@ -146,3 +146,8 @@ typeset -U PATH path
 
 [ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env" # ghcup-env
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+
+# -----------------------------------------------------------------------------
+# Machine-specific overrides (not tracked in git)
+# -----------------------------------------------------------------------------
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local

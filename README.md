@@ -13,6 +13,8 @@ dotfiles/
 ├── claude/
 │   ├── CLAUDE.md      # Claude Code global instructions
 │   └── settings.json  # Claude Code settings
+├── Brewfile           # Homebrew packages
+├── bootstrap.sh       # Install dependencies
 └── install.sh         # Symlink installer
 ```
 
@@ -21,7 +23,8 @@ dotfiles/
 ```bash
 git clone <repo-url> ~/dotfiles
 cd ~/dotfiles
-./install.sh
+./bootstrap.sh  # Install Homebrew, Oh My Zsh, plugins
+./install.sh    # Create symlinks
 ```
 
 ## Post-install
@@ -30,6 +33,8 @@ Set your git email per machine:
 ```bash
 git config --global user.email "your@email.com"
 ```
+
+For machine-specific shell config, create `~/.zshrc.local` (not tracked).
 
 ## Adding Files
 
