@@ -1,0 +1,1 @@
+- Before planning or implementing any code changes, always invoke the `coding-guardrails` skill using the Skill tool.
